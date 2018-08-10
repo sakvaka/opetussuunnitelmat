@@ -10,16 +10,24 @@ from operator import itemgetter
 ohjelmat = {
 	"926" : ("Alkeishiukkasfysiikka ja astrofysikaaliset tieteet (FM)"),
 	"932" : ("Datatiede (FM)"),
+	"924" : ("Elämäntieteiden informatiikka (FM)"),
 	"933" : ("Geologia ja geofysiikka (FM)"),
 	"928" : ("Ilmakehätieteet (FM)"),
+	"935" : ("Kaupunkitutkimus ja -suunnittelu (FM)"),
+	"929" : ("Kemia ja molekyylitieteet (FM)"),
+	"934" : ("Maantiede (FM)"),
+	"923" : ("Matematiikka ja tilastotiede (FM)"),
+	"930" : ("MFK-ope (FM)"),
 	"927" : ("Materiaalitutkimus (FM)"),
 	"925" : ("Teoreettiset ja laskennalliset menetelmät (FM)"),
+	"931" : ("Tietojenkäsittelytiede (FM)"),
 	"917" : ("Fysikaaliset tieteet (LuK)"),
+	"921" : ("Geotieteet (LuK)"),
+	"918" : ("Kemia (LuK)"),
+	"922" : ("Maantiede (LuK)"),
 	"916" : ("Matemaattiset tieteet (LuK)"),
 	"919" : ("MFK-ope (LuK)"),
-	"920" : ("Tietojenkäsittelytiede (LuK)"),
-	"918" : ("Kemia (LuK)"),
-	"921" : ("Geotieteet (LuK)")
+	"920" : ("Tietojenkäsittelytiede (LuK)")
 }
 
 # tulosta ohjelmat ja niiden koodit
