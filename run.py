@@ -88,8 +88,5 @@ def main():
 
     icalfile.close()
 
-
-
-
 if __name__ == '__main__':
     main()
