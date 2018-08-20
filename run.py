@@ -41,7 +41,7 @@ def main():
     icalfile = urllib.request.urlopen('https://future.optime.helsinki.fi/icalservice/Department/'+valittu)
     gcal = icalendar.Calendar.from_ical(icalfile.read())
 
-    muisti=[0,0]
+    muisti=[0,0,0]
 
     # kiellettyjä sanoja
     blacklisted = ['harjoitu', 'övning', 'labra', 'ex tempore', 'exerci', 'excerci', 'Itsenäinen', 'paja', 'Kisälliohjau', 'kokoukset', 'seminar', 'seminaar']
@@ -74,10 +74,11 @@ def main():
                 periodi=4
             else:
                 continue
-            if (muisti[0] != weekday or muisti[1] != starttime):
+            if (muisti[0] != weekday or muisti[1] != starttime or muisti[2] != periodi):
                 uusilista.append((periodi,weekday,startdt.strftime("%H:%M"), summary, description, location))
             muisti[0]=weekday
             muisti[1]=starttime
+            muisti[2]=periodi
 
     # laitetaan periodin, päivän ja kellonajan mukaiseen järjestykseen
     uusilista.sort(key=itemgetter(0,1,2))
