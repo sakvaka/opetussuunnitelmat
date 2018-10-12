@@ -30,7 +30,9 @@ def main():
         "919" : ("MFK-ope (LuK)"),
         "920" : ("Tietojenkäsittelytiede (LuK)")
     }
-
+    
+    paivat=["maanantai","tiistai","keskiviikko","torstai","perjantai","lauantai","sunnuntai"]
+    
     # tulosta ohjelmat ja niiden koodit
     for key, value in ohjelmat.items():
         print(key, " - ", value)
@@ -84,7 +86,7 @@ def main():
     uusilista.sort(key=itemgetter(0,1,2))
 
     for alkio in uusilista:
-        print("Periodi #{0}: päivä {1}: klo {2} : {3} {4} {5}\n".format(alkio[0],alkio[1],alkio[2], alkio[3], alkio[4], alkio[5]))
+        print("Periodi #{0}: {1}: klo {2} : {3} {4} {5}\n".format(alkio[0],paivat[alkio[1]],alkio[2], alkio[3], alkio[4], alkio[5]))
 
     icalfile.close()
 
