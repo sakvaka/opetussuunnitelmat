@@ -73,9 +73,9 @@ def main():
                 periodi=1
             elif startdt >= utc.localize(datetime(2019,10,28)) and startdt <= utc.localize(datetime(2019,12,15)):
                 periodi=2
-            elif startdt >= utc.localize(datetime(2019,1,13)) and startdt <= utc.localize(datetime(2019,3,1)):
+            elif startdt >= utc.localize(datetime(2020,1,13)) and startdt <= utc.localize(datetime(2020,3,1)):
                 periodi=3
-            elif startdt >= utc.localize(datetime(2019,3,9)) and startdt <= utc.localize(datetime(2019,5,3)):
+            elif startdt >= utc.localize(datetime(2020,3,9)) and startdt <= utc.localize(datetime(2020,5,3)):
                 periodi=4
             else:
                 continue
