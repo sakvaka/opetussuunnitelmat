@@ -5,6 +5,9 @@ import icalendar
 import urllib.request
 from dateutil.rrule import *
 from operator import itemgetter
+import pytz
+
+utc=pytz.UTC
 
 def main():
     # luettelo ohjelmista
@@ -66,13 +69,13 @@ def main():
             weekday= startdt.weekday()
             starttime= startdt.hour*100+startdt.minute
 
-            if startdt >= datetime(2018,9,3) and startdt <= datetime(2018,10,21):
+            if startdt >= utc.localize(datetime(2019,9,2)) and startdt <= utc.localize(datetime(2019,10,20)):
                 periodi=1
-            elif startdt >= datetime(2018,10,29) and startdt <= datetime(2018,12,16)                                                                                        :
+            elif startdt >= utc.localize(datetime(2019,10,28)) and startdt <= utc.localize(datetime(2019,12,15)):
                 periodi=2
-            elif startdt >= datetime(2019,1,14) and startdt <= datetime(2019,3,3):
+            elif startdt >= utc.localize(datetime(2019,1,13)) and startdt <= utc.localize(datetime(2019,3,1)):
                 periodi=3
-            elif startdt >= datetime(2019,3,11) and startdt <= datetime(2019,5,5):
+            elif startdt >= utc.localize(datetime(2019,3,9)) and startdt <= utc.localize(datetime(2019,5,3)):
                 periodi=4
             else:
                 continue
