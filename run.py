@@ -69,13 +69,13 @@ def main():
             weekday= startdt.weekday()
             starttime= startdt.hour*100+startdt.minute
 
-            if startdt >= utc.localize(datetime(2019,9,2)) and startdt <= utc.localize(datetime(2019,10,20)):
+            if startdt >= utc.localize(datetime(2020,8,31)) and startdt <= utc.localize(datetime(2020,10,18)):
                 periodi=1
-            elif startdt >= utc.localize(datetime(2019,10,28)) and startdt <= utc.localize(datetime(2019,12,15)):
+            elif startdt >= utc.localize(datetime(2020,10,26)) and startdt <= utc.localize(datetime(2020,12,13)):
                 periodi=2
-            elif startdt >= utc.localize(datetime(2020,1,13)) and startdt <= utc.localize(datetime(2020,3,1)):
+            elif startdt >= utc.localize(datetime(2021,1,18)) and startdt <= utc.localize(datetime(2021,3,7)):
                 periodi=3
-            elif startdt >= utc.localize(datetime(2020,3,9)) and startdt <= utc.localize(datetime(2020,5,3)):
+            elif startdt >= utc.localize(datetime(2021,3,15)) and startdt <= utc.localize(datetime(2021,5,9)):
                 periodi=4
             else:
                 continue
